@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body > h1 {
+    background-color: seagreen;
+}
+
+body > h1 {
+    color: white;
+}
+main {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main > .domino {
+    list-style-type: none;
+    font-size: 5rem;
+    transition: transform 0.5s;
+    background-color: rgb(187, 186, 184);
+    color: rebeccapurple;
+    
+    /* display: none; */
+}
+
+main > .domino:hover {
+    transform: scale(1.5) rotate(0.5turn);
+}
+
+main > .domino.selected {
+    /* display: block; */
+    
+    color: green;
+    filter: drop-shadow(0 0 0.25rem lightcyan);
+}
+.hidden {
+    display: none;
+
+}
